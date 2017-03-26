@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM alpine:3.5
 MAINTAINER Elton Renda "https://github.com/ej52"
 
 # Add s6-overlay and go_dnsmasq
@@ -12,7 +12,7 @@ RUN apk add --no-cache bind-tools curl && \
     chmod +x /bin/go-dnsmasq && \
     apk del curl && \
     rm -rf /var/cache/apk/* && \
-    
+
     # create user and give binary permissions to bind to lower port
     addgroup go-dnsmasq && \
     adduser -D -g "" -s /bin/sh -G go-dnsmasq go-dnsmasq && \
