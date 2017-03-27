@@ -1,9 +1,9 @@
-FROM alpine:3.5
+FROM alpine:3.4
 MAINTAINER Elton Renda "https://github.com/ej52"
 
 # Add s6-overlay and go_dnsmasq
-ENV S6_OVERLAY_VERSION=v1.17.2.0 \
-    GODNSMASQ_VERSION=1.0.6
+ENV S6_OVERLAY_VERSION=v1.19.1.1 \
+    GODNSMASQ_VERSION=1.0.7
 
 RUN apk add --no-cache bind-tools curl && \
     curl -sSL https://github.com/just-containers/s6-overlay/releases/download/${S6_OVERLAY_VERSION}/s6-overlay-amd64.tar.gz \
