@@ -3,4 +3,4 @@
 
 Base image for Docker, based on Alpine Linux using s6-overlay for process management.
 
-Latest version is `1.0.1`, or `latest`.
+Latest version is `1.0.2`, or `latest`.
