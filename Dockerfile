@@ -1,5 +1,5 @@
-FROM alpine:3.5
-MAINTAINER Elton Renda "https://github.com/ej52"
+FROM alpine:3.6
+LABEL maintainer Elton Renda "elton@ebrdev.co.za"
 
 RUN apk add --no-cache bash libcap bind-tools curl && \
     curl -sSL https://github.com/just-containers/s6-overlay/releases/download/v1.19.1.1/s6-overlay-amd64.tar.gz \
